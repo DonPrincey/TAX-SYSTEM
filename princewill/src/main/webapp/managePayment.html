@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<style>
+	.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+</style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="adminHome.html">Home</a>
+                <a class="navbar-brand" href="login.html">Log out</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 
+                </div>
+            </div>
+        </nav>
+        <h1 style ="text-align:center; color: purple" >MANAGE PAYMENTS</h1>
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                        <h3 style ="text-align:center; color: purple" >VIEW PAYMENT BY DATES</h3>
+                        
+                            
+                            <form method ="post" action ="paymentByDate.jsp" class="card card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h6 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="date" name ="paymentDate" placeholder="Enter Date">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    
+                    
+                    
+                    </br>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                        <h3 style ="text-align:center; color: purple" >VIEW PAYMENT BY DRIVERS</h3>
+                        
+                            
+                            <form method ="post" action ="paymentByDrivers.jsp" class="card card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h6 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="text" name ="plate_number" placeholder="Enter Vehicle Registration Number">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    
+                    </br>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                        
+                        
+                            
+                            <form method ="post" action ="allPayments.jsp">
+                                <div class="card-body row no-gutters align-items-center">
+                                    
+                                   
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit" style = "text-align:center">VIEW ALL PAYMENTS</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+
+</body>
+</html>
